@@ -1,0 +1,61 @@
+
+.main {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+}
+
+.code {
+  width: 30%;
+  background-color: #111111;
+  overflow: scroll;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  font-size: small;
+}
+
+#line_number {
+  display: inline;
+  text-align: right;
+  color: grey;
+}
+#code_text {
+  color: white;
+}
+
+#bar {
+  width: 35%;
+  min-height: 700px;
+  height: 95vh;
+}
+#plot {
+  width: 35%;
+  min-height: 700px;
+  height: 95vh;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.execute {
+  /* color: #ff9580; */
+  color: #ff9999;
+  /* font-weight: bold; */
+}
+.hover_bar {
+  /* color: orange; */
+  color: #ffb366
+  /* font-weight: bold; */
+}
+.hover_plot {
+  /* color: yellow; */
+  color: #ffff66;
+  /* font-weight: bold; */
+}

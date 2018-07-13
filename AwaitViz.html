@@ -1,0 +1,26 @@
+
+  <!doctype html>
+  <html lang="ja">
+  <head>
+  	<meta charset="UTF-8">
+  	<title>AwaitViz</title>
+  	<script src="https://cdn.plot.ly/plotly-latest.min.js" charset="utf-8"></script>
+    <!-- <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script> -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="style.css" rel="stylesheet" type="text/css" media="all" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="code">
+        <div id='line_number'></div>
+        <div id='code_text'></div>
+      </div>
+      <div id='bar'></div>
+      <div id='plot'></div>
+    </div>
+    <script src=visualizer/create_plot.js></script>
+    <script src=visualizer/create_bar.js></script>
+    <script src=visualizer/display.js></script>
+    <script src=visualizer/main.js></script>
+  </body>
+  </html>
