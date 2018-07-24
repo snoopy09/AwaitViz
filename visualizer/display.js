@@ -230,11 +230,11 @@ function display_plot(obj, code){
     //アニメーションだと文字のハイライトうまくいってないなぁ
 
     var time = e.step.value;
-    var range = nodes.filter(n => n.time==time || n.resolvetime==time)[0].range;
-    if(range != undefined) {
+    var change_node = nodes.filter(n => n.time==time || n.resolvetime==time)[0];
+    if(change_node != undefined) {
       //色を変える
-      execute[0].place = range[1];
-      execute[1].place = range[0];
+      execute[0].place = change_node.range[1];
+      execute[1].place = change_node.range[0];
       execute_code = str_insert(code, execute[0].place, execute[0].text);
       execute_code = str_insert(execute_code, execute[1].place, execute[1].text);
       change_text(execute_code);
