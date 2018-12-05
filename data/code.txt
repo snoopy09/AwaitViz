@@ -7,7 +7,9 @@ const fs = require('fs');
   filename = getFilename (response);
   response = await readFile (filename);
   show(response);
-})();
+})().then(function () {
+  console.log('complete');
+});
 function readFile (filename) {
   return new Promise (function (resolve) {
     fs.readFile(filename, 'utf-8', function (err, text) {

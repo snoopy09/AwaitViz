@@ -66,8 +66,9 @@ function display_plot(obj, code){
   var max_y = Math.max.apply(null, obj.nodes.map(n => n.y));
   var min_x = Math.min.apply(null, obj.nodes.map(n => n.x));
   var min_y = Math.min.apply(null, obj.nodes.map(n => n.y));
-  var categorys = ['NaN', 'new Promise()', '.then()', 'relaying then', 'wrapping Promise', 'continuation closure', 'async()'];
+  var categorys = ['NaN', '.then()', 'new Promise()', 'relaying then', 'wrapping Promise', 'continuation closure', 'async()'];
   categorys = categorys.filter(c => obj.nodes.filter(n => n.z===c).length>0);
+  console.log(categorys);
   var ticks = [];
   for(var i=0;i<categorys.length;i++){
     ticks.push(i+1);

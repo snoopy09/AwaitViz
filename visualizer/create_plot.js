@@ -6,8 +6,10 @@ var max_cycle = 5;
 // const pending_color = ['#ff9900', '#ffad33', '#ffc266', '#ffd699'];
 // const pending_color = ['#66ff00', '#85ff33', '#a3ff66', '#c2ff99'];
 // const resolve_color = ['#0066ff', '#3385ff', '#66a3ff', '#99c2ff'];
-const pending_color = ['#F5B090', '#FCD7A1', '#FFF9B1', '#A5D4AD', '#A2D7D4', '#9FD9F6', '#A3BCE2'];
-const resolve_color = ['#D7000F', '#E48E00', '#F3E100', '#009140', '#00958D', '#0097DB', '#0062AC'];
+// const pending_color = ['#F5B090', '#FCD7A1', '#FFF9B1', '#A5D4AD', '#A2D7D4', '#9FD9F6', '#A3BCE2'];
+// const resolve_color = ['#D7000F', '#E48E00', '#F3E100', '#009140', '#00958D', '#0097DB', '#0062AC'];
+const pending_color = ['#FFB2A8', '#FFC089', '#FEFAC1', '#9FE9B4', '#9FB9E9', '#D8B4EE', '#999999'];
+const resolve_color = ['#F41C00', '#FE8A23', '#F3E100', '#2CC357', '#376DD1', '#9937D1', '#666666'];
 const type_num = 7*2;
 
 let code_length;
@@ -220,20 +222,21 @@ function create_frame (nodes, time) {
 
   var pendings = nodes.filter(n => n.state == 'pending');
   var resolves = nodes.filter(n => n.state == 'resolved');
-  frame.push(node_frame(pendings.filter(n => n.nodetype === 'Promiseauto'), 'NaN', 3, 1));
-  frame.push(node_frame(pendings.filter(n => n.nodetype === 'Promiseuser'), 'new Promise()', 5, 5));
-  frame.push(node_frame(pendings.filter(n => n.nodetype === 'thenauto'), 'relay then', 3, 4));
-  frame.push(node_frame(pendings.filter(n => n.nodetype === 'thenuser'), '.then()', 5, 6));
   frame.push(node_frame(pendings.filter(n => n.nodetype === 'async function'), 'asyncFunc()', 5, 0));
+  frame.push(node_frame(pendings.filter(n => n.nodetype === 'await2'), 'register closure', 3, 1));
   frame.push(node_frame(pendings.filter(n => n.nodetype === 'await1'), 'wrapping Promsie', 3, 2));
-  frame.push(node_frame(pendings.filter(n => n.nodetype === 'await2'), 'register closure', 3, 3));
-  frame.push(node_frame(resolves.filter(n => n.nodetype === 'Promiseauto'), 'NaN', 3, 1));
-  frame.push(node_frame(resolves.filter(n => n.nodetype === 'Promiseuser'), 'new Promise()', 5, 5));
-  frame.push(node_frame(resolves.filter(n => n.nodetype === 'thenauto'), 'relay then', 3, 4));
-  frame.push(node_frame(resolves.filter(n => n.nodetype === 'thenuser'), '.then()', 5, 6));
+  frame.push(node_frame(pendings.filter(n => n.nodetype === 'thenauto'), 'relay then', 3, 3));
+  frame.push(node_frame(pendings.filter(n => n.nodetype === 'Promiseuser'), 'new Promise()', 5, 4));
+  frame.push(node_frame(pendings.filter(n => n.nodetype === 'thenuser'), '.then()', 5, 5));
+  frame.push(node_frame(pendings.filter(n => n.nodetype === 'Promiseauto'), 'NaN', 3, 6));
   frame.push(node_frame(resolves.filter(n => n.nodetype === 'async function'), 'asyncFunc()', 5, 0));
+  frame.push(node_frame(resolves.filter(n => n.nodetype === 'await2'), 'register closure', 3, 1));
   frame.push(node_frame(resolves.filter(n => n.nodetype === 'await1'), 'wrapping Promsie', 3, 2));
-  frame.push(node_frame(resolves.filter(n => n.nodetype === 'await2'), 'register closure', 3, 3));
+  frame.push(node_frame(resolves.filter(n => n.nodetype === 'thenauto'), 'relay then', 3, 3));
+  frame.push(node_frame(resolves.filter(n => n.nodetype === 'Promiseuser'), 'new Promise()', 5, 4));
+  frame.push(node_frame(resolves.filter(n => n.nodetype === 'thenuser'), '.then()', 5, 5));
+  frame.push(node_frame(resolves.filter(n => n.nodetype === 'Promiseauto'), 'NaN', 3, 6));
+
   function node_frame (nodes, text, size, color_n){
     if(nodes.length > 0) var state = nodes[0].state;
     return {
@@ -264,14 +267,14 @@ function create_frame (nodes, time) {
       line: {
         colorscale: (function () {
           switch(line.type){
-            case 'normal.then': return make_scale(pending_color[6]);
-            case 'auto.then': return make_scale(pending_color[4]);
+            case 'normal.then': return make_scale(pending_color[5]);
+            case 'auto.then': return make_scale(pending_color[3]);
             case 'await group': return make_scale(pending_color[0]);
-            case 'implicit.then': return make_scale(pending_color[3]);
+            case 'implicit.then': return make_scale(pending_color[1]);
             case 'executor': return 'black';
-            case 'normal.then resolve': return make_scale(resolve_color[6]);
-            case 'auto.then resolve': return make_scale(resolve_color[4]);
-            case 'implicit.then resolve': return make_scale(resolve_color[3]);
+            case 'normal.then resolve': return make_scale(resolve_color[5]);
+            case 'auto.then resolve': return make_scale(resolve_color[3]);
+            case 'implicit.then resolve': return make_scale(resolve_color[1]);
             case 'wrapping Promise resolve': return make_scale(resolve_color[2]);
           }
           function make_scale(color){
