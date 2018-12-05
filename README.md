@@ -1,7 +1,11 @@
 # AwaitViz
 
 How to Use
-1. install packages
+1. install these npm packages
+stack-trace
+esprima
+escodegen
+estraverse
 
 2. execute this command
 node implement.js [filepath]
