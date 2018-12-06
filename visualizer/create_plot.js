@@ -8,7 +8,7 @@ var max_cycle = 5;
 // const resolve_color = ['#0066ff', '#3385ff', '#66a3ff', '#99c2ff'];
 // const pending_color = ['#F5B090', '#FCD7A1', '#FFF9B1', '#A5D4AD', '#A2D7D4', '#9FD9F6', '#A3BCE2'];
 // const resolve_color = ['#D7000F', '#E48E00', '#F3E100', '#009140', '#00958D', '#0097DB', '#0062AC'];
-const pending_color = ['#FFB2A8', '#FFC089', '#FEFAC1', '#9FE9B4', '#9FB9E9', '#D8B4EE', '#999999'];
+const pending_color = ['#FFB2A8', '#FECEA3', '#FEFAC1', '#9FE9B4', '#9FB9E9', '#D8B4EE', '#999999'];
 const resolve_color = ['#F41C00', '#FE8A23', '#F3E100', '#2CC357', '#376DD1', '#9937D1', '#666666'];
 const type_num = 7*2;
 

@@ -10,7 +10,7 @@ function create_bar (logs, funcname, code){
     // var color_list = [[230, 0, 18], [243, 152, 0], [255, 241, 0], [143, 195, 31], [0, 153, 68], [0, 158, 150], [0, 160, 233], [0, 104, 183], [29, 32, 136], [146, 7, 131], [228, 0, 127], [229, 0, 79]];
     // var color_list = [[230, 0, 18], [243, 152, 0], [255, 241, 0], [143, 195, 31], [0, 153, 68], [0, 160, 233], [0, 104, 183], [29, 32, 136], [146, 7, 131], [228, 0, 127], [229, 0, 79]];
     // return color_list[color_key++%12];
-    var r = [color_key++%8]*30+15;
+    var r = 50;
     return [r, r, r];
   }
   var rgb_map = funcname.map(obj => set_rgb());
@@ -142,10 +142,10 @@ function create_bar (logs, funcname, code){
       type : 'bar',
       orientation : 'h',
       showlegend: false,
-      // text: (func.is_async_call)? 'async' : 'sync',
+      text: (new_func_list.length > 5)? '' : (func.is_async_call)? 'async' : 'sync',
       hovertext: (func.is_async_call)? 'async call' : 'sync call',
       textposition: 'auto',
-      textfont: {size: 15},
+      textfont: {size: 15, color: (func.is_async_call)? '#000000' : '#999999'},
       constraintext: 'none',
       // cliponaxis: false,
       hoverinfo: 'text',
@@ -173,7 +173,7 @@ function create_bar (logs, funcname, code){
   }
 
   function set_color (rgb, is_async_call) {
-    var alpha = (is_async_call)? 0.4 : 1;
+    var alpha = (is_async_call)? 0.3 : 1;
     return `rgba(${rgb[0]}, ${rgb[1]}, ${rgb[2]}, ${alpha})`;
   }
   function set_end (obj) {
