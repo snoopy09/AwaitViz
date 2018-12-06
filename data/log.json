@@ -1,7 +1,7 @@
 {"list": [{
     "log_id": "0",
     "logtype": "esprima",
-    "time": "2.8064869977533817",
+    "time": "3.0120959989726543",
     "type": "func_begin",
     "func_id": "0",
     "func_name": "main program",
@@ -14,7 +14,7 @@
 {
     "log_id": "1",
     "logtype": "hook",
-    "time": "3.3939609974622726",
+    "time": "3.8700110018253326",
     "type": "PROMISE",
     "id": "6",
     "tid": "1",
@@ -23,7 +23,7 @@
 {
     "log_id": "2",
     "logtype": "esprima",
-    "time": "3.5272469967603683",
+    "time": "4.063159000128508",
     "type": "func_begin",
     "func_id": "1",
     "func_name": "func@2:1",
@@ -36,7 +36,7 @@
 {
     "log_id": "3",
     "logtype": "esprima",
-    "time": "3.7312109991908073",
+    "time": "4.347208000719547",
     "type": "func_begin",
     "func_id": "3",
     "func_name": "readFile",
@@ -49,7 +49,7 @@
 {
     "log_id": "4",
     "logtype": "esprima",
-    "time": "3.859020996838808",
+    "time": "4.529686000198126",
     "type": "promise",
     "cycle": "0",
     "loc": "14,9",
@@ -58,14 +58,14 @@
 {
     "log_id": "5",
     "logtype": "monkey",
-    "time": "4.102988999336958",
+    "time": "4.834244001656771",
     "type": "Promise",
     "caller": "user"
 },
 {
     "log_id": "6",
     "logtype": "hook",
-    "time": "4.240681000053883",
+    "time": "5.043689999729395",
     "type": "PROMISE",
     "id": "7",
     "tid": "1",
@@ -74,7 +74,7 @@
 {
     "log_id": "7",
     "logtype": "esprima",
-    "time": "4.433242999017239",
+    "time": "5.411495000123978",
     "type": "func_begin",
     "func_id": "4",
     "func_name": "func@14:22",
@@ -87,7 +87,7 @@
 {
     "log_id": "8",
     "logtype": "esprima",
-    "time": "4.91601499915123",
+    "time": "6.002725999802351",
     "type": "func_end",
     "func_id": "4",
     "func_name": "func@14:22",
@@ -99,7 +99,7 @@
 {
     "log_id": "9",
     "logtype": "esprima",
-    "time": "5.0562889985740185",
+    "time": "6.154391001909971",
     "type": "func_end",
     "func_id": "3",
     "func_name": "readFile",
@@ -111,7 +111,7 @@
 {
     "log_id": "10",
     "logtype": "esprima",
-    "time": "5.28193099796772",
+    "time": "6.312458001077175",
     "type": "await",
     "func_id": "1",
     "func_name": "func@2:1",
@@ -124,7 +124,7 @@
 {
     "log_id": "11",
     "logtype": "hook",
-    "time": "5.453364998102188",
+    "time": "6.408769000321627",
     "type": "PROMISE",
     "id": "9",
     "tid": "6",
@@ -133,7 +133,7 @@
 {
     "log_id": "12",
     "logtype": "hook",
-    "time": "5.562259998172522",
+    "time": "6.484753999859095",
     "type": "PROMISE",
     "id": "10",
     "tid": "9",
@@ -142,7 +142,7 @@
 {
     "log_id": "13",
     "logtype": "hook",
-    "time": "5.88985999673605",
+    "time": "6.763215001672506",
     "type": "promiseResolve",
     "id": "9",
     "tid": "0",
@@ -151,14 +151,14 @@
 {
     "log_id": "14",
     "logtype": "monkey",
-    "time": "7.503605999052525",
+    "time": "6.942839998751879",
     "type": "then",
     "caller": "user"
 },
 {
     "log_id": "15",
     "logtype": "hook",
-    "time": "8.172018997371197",
+    "time": "7.034963998943567",
     "type": "PROMISE",
     "id": "11",
     "tid": "6",
@@ -167,7 +167,7 @@
 {
     "log_id": "16",
     "logtype": "esprima",
-    "time": "8.296598996967077",
+    "time": "7.097805999219418",
     "type": "func_end",
     "func_id": "0",
     "func_name": "main program",
@@ -179,7 +179,7 @@
 {
     "log_id": "17",
     "logtype": "hook",
-    "time": "9.51417799666524",
+    "time": "7.509603001177311",
     "type": "before",
     "id": "5",
     "tid": "1",
@@ -188,21 +188,21 @@
 {
     "log_id": "18",
     "logtype": "esprima",
-    "time": "9.992770999670029",
+    "time": "7.70643800124526",
     "type": "update_cycle",
     "cycle": "1"
 },
 {
     "log_id": "19",
     "logtype": "monkey",
-    "time": "10.45949999988079",
+    "time": "7.939948000013828",
     "type": "then",
     "caller": "auto"
 },
 {
     "log_id": "20",
     "logtype": "hook",
-    "time": "10.600533999502659",
+    "time": "8.005469001829624",
     "type": "PROMISE",
     "id": "12",
     "tid": "7",
@@ -211,7 +211,7 @@
 {
     "log_id": "21",
     "logtype": "hook",
-    "time": "10.919373996555805",
+    "time": "8.187524002045393",
     "type": "before",
     "id": "8",
     "tid": "0",
@@ -220,7 +220,7 @@
 {
     "log_id": "22",
     "logtype": "hook",
-    "time": "11.157970998436213",
+    "time": "8.402830999344587",
     "type": "before",
     "id": "13",
     "tid": "0",
@@ -229,7 +229,7 @@
 {
     "log_id": "23",
     "logtype": "hook",
-    "time": "12.75034299865365",
+    "time": "10.026599001139402",
     "type": "before",
     "id": "14",
     "tid": "0",
@@ -238,7 +238,7 @@
 {
     "log_id": "24",
     "logtype": "hook",
-    "time": "13.176280997693539",
+    "time": "10.288655001670122",
     "type": "before",
     "id": "15",
     "tid": "0",
@@ -247,7 +247,7 @@
 {
     "log_id": "25",
     "logtype": "esprima",
-    "time": "13.83737500011921",
+    "time": "10.741154000163078",
     "type": "func_begin",
     "func_id": "5",
     "func_name": "func@15:35",
@@ -260,7 +260,7 @@
 {
     "log_id": "26",
     "logtype": "hook",
-    "time": "13.93529099971056",
+    "time": "10.792449001222849",
     "type": "promiseResolve",
     "id": "7",
     "tid": "14",
@@ -269,7 +269,7 @@
 {
     "log_id": "27",
     "logtype": "esprima",
-    "time": "14.034834999591112",
+    "time": "10.841481000185013",
     "type": "func_end",
     "func_id": "5",
     "func_name": "func@15:35",
@@ -281,7 +281,7 @@
 {
     "log_id": "28",
     "logtype": "hook",
-    "time": "14.111802998930216",
+    "time": "10.883990000933409",
     "type": "before",
     "id": "16",
     "tid": "15",
@@ -290,14 +290,14 @@
 {
     "log_id": "29",
     "logtype": "esprima",
-    "time": "14.156262997537851",
+    "time": "10.91168900206685",
     "type": "update_cycle",
     "cycle": "2"
 },
 {
     "log_id": "30",
     "logtype": "hook",
-    "time": "14.224739998579025",
+    "time": "10.949880000203848",
     "type": "before",
     "id": "12",
     "tid": "7",
@@ -306,7 +306,7 @@
 {
     "log_id": "31",
     "logtype": "hook",
-    "time": "14.27828599885106",
+    "time": "10.981215998530388",
     "type": "promiseResolve",
     "id": "9",
     "tid": "7",
@@ -315,7 +315,7 @@
 {
     "log_id": "32",
     "logtype": "hook",
-    "time": "14.357292998582125",
+    "time": "11.02675100043416",
     "type": "promiseResolve",
     "id": "12",
     "tid": "7",
@@ -324,7 +324,7 @@
 {
     "log_id": "33",
     "logtype": "hook",
-    "time": "14.408418998122215",
+    "time": "11.055332999676466",
     "type": "before",
     "id": "10",
     "tid": "9",
@@ -333,7 +333,7 @@
 {
     "log_id": "34",
     "logtype": "esprima",
-    "time": "14.584083996713161",
+    "time": "11.15532299876213",
     "type": "resume",
     "func_id": "1",
     "func_name": "func@2:1",
@@ -345,7 +345,7 @@
 {
     "log_id": "35",
     "logtype": "esprima",
-    "time": "14.718442998826504",
+    "time": "11.276335999369621",
     "type": "func_begin",
     "func_id": "6",
     "func_name": "getFilename",
@@ -358,7 +358,7 @@
 {
     "log_id": "36",
     "logtype": "esprima",
-    "time": "14.77522099763155",
+    "time": "11.34196300059557",
     "type": "func_end",
     "func_id": "6",
     "func_name": "getFilename",
@@ -370,7 +370,7 @@
 {
     "log_id": "37",
     "logtype": "esprima",
-    "time": "14.823245000094175",
+    "time": "11.385350000113249",
     "type": "func_begin",
     "func_id": "3",
     "func_name": "readFile",
@@ -383,7 +383,7 @@
 {
     "log_id": "38",
     "logtype": "esprima",
-    "time": "14.873257998377085",
+    "time": "11.436278000473976",
     "type": "promise",
     "cycle": "2",
     "loc": "14,9",
@@ -392,14 +392,14 @@
 {
     "log_id": "39",
     "logtype": "monkey",
-    "time": "14.934372998774052",
+    "time": "11.49583800137043",
     "type": "Promise",
     "caller": "user"
 },
 {
     "log_id": "40",
     "logtype": "hook",
-    "time": "15.091482996940613",
+    "time": "11.638643000274897",
     "type": "PROMISE",
     "id": "18",
     "tid": "10",
@@ -408,7 +408,7 @@
 {
     "log_id": "41",
     "logtype": "esprima",
-    "time": "15.171755999326706",
+    "time": "11.71951499953866",
     "type": "func_begin",
     "func_id": "4",
     "func_name": "func@14:22",
@@ -421,7 +421,7 @@
 {
     "log_id": "42",
     "logtype": "esprima",
-    "time": "15.364523999392986",
+    "time": "11.962879002094269",
     "type": "func_end",
     "func_id": "4",
     "func_name": "func@14:22",
@@ -433,7 +433,7 @@
 {
     "log_id": "43",
     "logtype": "esprima",
-    "time": "15.416135996580124",
+    "time": "12.016268000006676",
     "type": "func_end",
     "func_id": "3",
     "func_name": "readFile",
@@ -445,7 +445,7 @@
 {
     "log_id": "44",
     "logtype": "esprima",
-    "time": "15.457158997654915",
+    "time": "12.057769998908043",
     "type": "await",
     "func_id": "1",
     "func_name": "func@2:1",
@@ -458,7 +458,7 @@
 {
     "log_id": "45",
     "logtype": "hook",
-    "time": "15.523118998855352",
+    "time": "12.127854000777006",
     "type": "PROMISE",
     "id": "20",
     "tid": "6",
@@ -467,7 +467,7 @@
 {
     "log_id": "46",
     "logtype": "hook",
-    "time": "15.57056899741292",
+    "time": "12.158153001219034",
     "type": "PROMISE",
     "id": "21",
     "tid": "20",
@@ -476,7 +476,7 @@
 {
     "log_id": "47",
     "logtype": "hook",
-    "time": "15.617840997874737",
+    "time": "12.186592999845743",
     "type": "promiseResolve",
     "id": "20",
     "tid": "9",
@@ -485,7 +485,7 @@
 {
     "log_id": "48",
     "logtype": "hook",
-    "time": "15.656834997236729",
+    "time": "12.209718000143766",
     "type": "promiseResolve",
     "id": "10",
     "tid": "9",
@@ -494,14 +494,14 @@
 {
     "log_id": "49",
     "logtype": "monkey",
-    "time": "15.694658000022173",
+    "time": "12.234928000718355",
     "type": "then",
     "caller": "auto"
 },
 {
     "log_id": "50",
     "logtype": "hook",
-    "time": "15.741357997059822",
+    "time": "12.264159999787807",
     "type": "PROMISE",
     "id": "22",
     "tid": "18",
@@ -510,7 +510,7 @@
 {
     "log_id": "51",
     "logtype": "hook",
-    "time": "15.795363999903202",
+    "time": "12.295535001903772",
     "type": "before",
     "id": "17",
     "tid": "10",
@@ -519,14 +519,14 @@
 {
     "log_id": "52",
     "logtype": "esprima",
-    "time": "15.801849998533726",
+    "time": "12.301192998886108",
     "type": "update_cycle",
     "cycle": "3"
 },
 {
     "log_id": "53",
     "logtype": "hook",
-    "time": "15.920802999287844",
+    "time": "12.34706800058484",
     "type": "before",
     "id": "19",
     "tid": "0",
@@ -535,7 +535,7 @@
 {
     "log_id": "54",
     "logtype": "hook",
-    "time": "16.021853998303413",
+    "time": "12.420125000178814",
     "type": "before",
     "id": "23",
     "tid": "0",
@@ -544,7 +544,7 @@
 {
     "log_id": "55",
     "logtype": "hook",
-    "time": "17.26536299660802",
+    "time": "13.451365001499653",
     "type": "before",
     "id": "24",
     "tid": "0",
@@ -553,7 +553,7 @@
 {
     "log_id": "56",
     "logtype": "hook",
-    "time": "17.43096799775958",
+    "time": "13.58431899920106",
     "type": "before",
     "id": "25",
     "tid": "0",
@@ -562,7 +562,7 @@
 {
     "log_id": "57",
     "logtype": "esprima",
-    "time": "17.511992998421192",
+    "time": "13.636018000543118",
     "type": "func_begin",
     "func_id": "5",
     "func_name": "func@15:35",
@@ -575,7 +575,7 @@
 {
     "log_id": "58",
     "logtype": "hook",
-    "time": "17.561448998749256",
+    "time": "13.66541500017047",
     "type": "promiseResolve",
     "id": "18",
     "tid": "24",
@@ -584,7 +584,7 @@
 {
     "log_id": "59",
     "logtype": "esprima",
-    "time": "17.600525997579098",
+    "time": "13.687966000288725",
     "type": "func_end",
     "func_id": "5",
     "func_name": "func@15:35",
@@ -596,7 +596,7 @@
 {
     "log_id": "60",
     "logtype": "hook",
-    "time": "17.644905999302864",
+    "time": "13.717840999364853",
     "type": "before",
     "id": "26",
     "tid": "25",
@@ -605,14 +605,14 @@
 {
     "log_id": "61",
     "logtype": "esprima",
-    "time": "17.651703000068665",
+    "time": "13.722428999841213",
     "type": "update_cycle",
     "cycle": "4"
 },
 {
     "log_id": "62",
     "logtype": "hook",
-    "time": "17.694945000112057",
+    "time": "13.749439999461174",
     "type": "before",
     "id": "22",
     "tid": "18",
@@ -621,7 +621,7 @@
 {
     "log_id": "63",
     "logtype": "hook",
-    "time": "17.739532999694347",
+    "time": "13.771071001887321",
     "type": "promiseResolve",
     "id": "20",
     "tid": "18",
@@ -630,7 +630,7 @@
 {
     "log_id": "64",
     "logtype": "hook",
-    "time": "17.776459999382496",
+    "time": "13.791053000837564",
     "type": "promiseResolve",
     "id": "22",
     "tid": "18",
@@ -639,7 +639,7 @@
 {
     "log_id": "65",
     "logtype": "hook",
-    "time": "17.814329996705055",
+    "time": "13.812656000256538",
     "type": "before",
     "id": "21",
     "tid": "20",
@@ -648,7 +648,7 @@
 {
     "log_id": "66",
     "logtype": "esprima",
-    "time": "17.865972999483347",
+    "time": "13.841644000262022",
     "type": "resume",
     "func_id": "1",
     "func_name": "func@2:1",
@@ -660,7 +660,7 @@
 {
     "log_id": "67",
     "logtype": "esprima",
-    "time": "17.935747999697924",
+    "time": "13.88587399944663",
     "type": "func_begin",
     "func_id": "6",
     "func_name": "getFilename",
@@ -673,7 +673,7 @@
 {
     "log_id": "68",
     "logtype": "esprima",
-    "time": "17.987242996692657",
+    "time": "13.916840001940727",
     "type": "func_end",
     "func_id": "6",
     "func_name": "getFilename",
@@ -685,7 +685,7 @@
 {
     "log_id": "69",
     "logtype": "esprima",
-    "time": "18.031137999147177",
+    "time": "14.017202999442816",
     "type": "func_begin",
     "func_id": "3",
     "func_name": "readFile",
@@ -698,7 +698,7 @@
 {
     "log_id": "70",
     "logtype": "esprima",
-    "time": "18.072790998965502",
+    "time": "14.064888998866081",
     "type": "promise",
     "cycle": "4",
     "loc": "14,9",
@@ -707,14 +707,14 @@
 {
     "log_id": "71",
     "logtype": "monkey",
-    "time": "18.115043997764587",
+    "time": "14.107613001018763",
     "type": "Promise",
     "caller": "user"
 },
 {
     "log_id": "72",
     "logtype": "hook",
-    "time": "18.17170500010252",
+    "time": "14.176759999245405",
     "type": "PROMISE",
     "id": "28",
     "tid": "21",
@@ -723,7 +723,7 @@
 {
     "log_id": "73",
     "logtype": "esprima",
-    "time": "18.22733599692583",
+    "time": "14.212414998561144",
     "type": "func_begin",
     "func_id": "4",
     "func_name": "func@14:22",
@@ -736,7 +736,7 @@
 {
     "log_id": "74",
     "logtype": "esprima",
-    "time": "18.330780997872353",
+    "time": "14.312816001474857",
     "type": "func_end",
     "func_id": "4",
     "func_name": "func@14:22",
@@ -748,7 +748,7 @@
 {
     "log_id": "75",
     "logtype": "esprima",
-    "time": "18.37636499851942",
+    "time": "14.381096001714468",
     "type": "func_end",
     "func_id": "3",
     "func_name": "readFile",
@@ -760,7 +760,7 @@
 {
     "log_id": "76",
     "logtype": "esprima",
-    "time": "18.416253998875618",
+    "time": "14.408445999026299",
     "type": "await",
     "func_id": "1",
     "func_name": "func@2:1",
@@ -773,7 +773,7 @@
 {
     "log_id": "77",
     "logtype": "hook",
-    "time": "18.46637499704957",
+    "time": "14.439164999872446",
     "type": "PROMISE",
     "id": "30",
     "tid": "6",
@@ -782,7 +782,7 @@
 {
     "log_id": "78",
     "logtype": "hook",
-    "time": "18.515828996896744",
+    "time": "14.465729001909494",
     "type": "PROMISE",
     "id": "31",
     "tid": "30",
@@ -791,7 +791,7 @@
 {
     "log_id": "79",
     "logtype": "hook",
-    "time": "18.561184998601675",
+    "time": "14.491881001740694",
     "type": "promiseResolve",
     "id": "30",
     "tid": "20",
@@ -800,7 +800,7 @@
 {
     "log_id": "80",
     "logtype": "hook",
-    "time": "18.603067997843027",
+    "time": "14.51442800089717",
     "type": "promiseResolve",
     "id": "21",
     "tid": "20",
@@ -809,14 +809,14 @@
 {
     "log_id": "81",
     "logtype": "monkey",
-    "time": "18.643750999122858",
+    "time": "14.538525998592377",
     "type": "then",
     "caller": "auto"
 },
 {
     "log_id": "82",
     "logtype": "hook",
-    "time": "18.691390998661518",
+    "time": "14.5667489990592",
     "type": "PROMISE",
     "id": "32",
     "tid": "28",
@@ -825,7 +825,7 @@
 {
     "log_id": "83",
     "logtype": "hook",
-    "time": "18.738413996994495",
+    "time": "14.594930998980999",
     "type": "before",
     "id": "27",
     "tid": "21",
@@ -834,14 +834,14 @@
 {
     "log_id": "84",
     "logtype": "esprima",
-    "time": "18.745709996670485",
+    "time": "14.599711000919342",
     "type": "update_cycle",
     "cycle": "5"
 },
 {
     "log_id": "85",
     "logtype": "hook",
-    "time": "18.809212997555733",
+    "time": "14.642335001379251",
     "type": "before",
     "id": "29",
     "tid": "0",
@@ -850,7 +850,7 @@
 {
     "log_id": "86",
     "logtype": "hook",
-    "time": "18.904703997075558",
+    "time": "14.746633000671864",
     "type": "before",
     "id": "33",
     "tid": "0",
@@ -859,7 +859,7 @@
 {
     "log_id": "87",
     "logtype": "hook",
-    "time": "20.189895998686552",
+    "time": "16.041735000908375",
     "type": "before",
     "id": "34",
     "tid": "0",
@@ -868,7 +868,7 @@
 {
     "log_id": "88",
     "logtype": "hook",
-    "time": "20.31521999835968",
+    "time": "16.196710001677275",
     "type": "before",
     "id": "35",
     "tid": "0",
@@ -877,7 +877,7 @@
 {
     "log_id": "89",
     "logtype": "esprima",
-    "time": "20.385988999158144",
+    "time": "16.283482998609543",
     "type": "func_begin",
     "func_id": "5",
     "func_name": "func@15:35",
@@ -890,7 +890,7 @@
 {
     "log_id": "90",
     "logtype": "hook",
-    "time": "20.438145998865366",
+    "time": "16.342169001698494",
     "type": "promiseResolve",
     "id": "28",
     "tid": "34",
@@ -899,7 +899,7 @@
 {
     "log_id": "91",
     "logtype": "esprima",
-    "time": "20.480609998106956",
+    "time": "16.38426899909973",
     "type": "func_end",
     "func_id": "5",
     "func_name": "func@15:35",
@@ -911,7 +911,7 @@
 {
     "log_id": "92",
     "logtype": "hook",
-    "time": "20.528810996562243",
+    "time": "16.438110001385212",
     "type": "before",
     "id": "36",
     "tid": "35",
@@ -920,14 +920,14 @@
 {
     "log_id": "93",
     "logtype": "esprima",
-    "time": "20.535620998591185",
+    "time": "16.444830998778343",
     "type": "update_cycle",
     "cycle": "6"
 },
 {
     "log_id": "94",
     "logtype": "hook",
-    "time": "20.582900997251272",
+    "time": "16.49252799898386",
     "type": "before",
     "id": "32",
     "tid": "28",
@@ -936,7 +936,7 @@
 {
     "log_id": "95",
     "logtype": "hook",
-    "time": "20.622242998331785",
+    "time": "16.532248001545668",
     "type": "promiseResolve",
     "id": "30",
     "tid": "28",
@@ -945,7 +945,7 @@
 {
     "log_id": "96",
     "logtype": "hook",
-    "time": "20.659104999154806",
+    "time": "16.569648999720812",
     "type": "promiseResolve",
     "id": "32",
     "tid": "28",
@@ -954,7 +954,7 @@
 {
     "log_id": "97",
     "logtype": "hook",
-    "time": "20.698409996926785",
+    "time": "16.609772998839617",
     "type": "before",
     "id": "31",
     "tid": "30",
@@ -963,7 +963,7 @@
 {
     "log_id": "98",
     "logtype": "esprima",
-    "time": "20.768988996744156",
+    "time": "16.67764399945736",
     "type": "resume",
     "func_id": "1",
     "func_name": "func@2:1",
@@ -975,7 +975,7 @@
 {
     "log_id": "99",
     "logtype": "esprima",
-    "time": "20.931405998766422",
+    "time": "16.822239998728037",
     "type": "func_begin",
     "func_id": "7",
     "func_name": "show",
@@ -988,7 +988,7 @@
 {
     "log_id": "100",
     "logtype": "esprima",
-    "time": "23.947963997721672",
+    "time": "19.157319001853466",
     "type": "func_end",
     "func_id": "7",
     "func_name": "show",
@@ -1000,7 +1000,7 @@
 {
     "log_id": "101",
     "logtype": "esprima",
-    "time": "24.011322997510433",
+    "time": "19.219615999609232",
     "type": "func_end",
     "func_id": "1",
     "func_name": "func@2:1",
@@ -1012,7 +1012,7 @@
 {
     "log_id": "102",
     "logtype": "hook",
-    "time": "24.07440099865198",
+    "time": "19.282843999564648",
     "type": "promiseResolve",
     "id": "6",
     "tid": "30",
@@ -1021,7 +1021,7 @@
 {
     "log_id": "103",
     "logtype": "hook",
-    "time": "24.117974996566772",
+    "time": "19.328519001603127",
     "type": "promiseResolve",
     "id": "31",
     "tid": "30",
@@ -1030,7 +1030,7 @@
 {
     "log_id": "104",
     "logtype": "hook",
-    "time": "24.164034999907017",
+    "time": "19.37448799982667",
     "type": "before",
     "id": "11",
     "tid": "6",
@@ -1039,7 +1039,7 @@
 {
     "log_id": "105",
     "logtype": "esprima",
-    "time": "24.308917999267578",
+    "time": "19.512956000864506",
     "type": "func_begin",
     "func_id": "2",
     "func_name": "func@10:10",
@@ -1052,7 +1052,7 @@
 {
     "log_id": "106",
     "logtype": "esprima",
-    "time": "24.63425999879837",
+    "time": "19.82168500125408",
     "type": "func_end",
     "func_id": "2",
     "func_name": "func@10:10",
@@ -1064,7 +1064,7 @@
 {
     "log_id": "107",
     "logtype": "hook",
-    "time": "24.687738999724388",
+    "time": "19.909350998699665",
     "type": "promiseResolve",
     "id": "11",
     "tid": "6",
@@ -1073,7 +1073,7 @@
 {
     "log_id": "108",
     "logtype": "hook",
-    "time": "24.73649799823761",
+    "time": "19.97239400073886",
     "type": "before",
     "id": "37",
     "tid": "31",
@@ -1082,14 +1082,14 @@
 {
     "log_id": "109",
     "logtype": "esprima",
-    "time": "24.74387499690056",
+    "time": "19.981683999300003",
     "type": "update_cycle",
     "cycle": "7"
 },
 {
     "log_id": "110",
     "logtype": "hook",
-    "time": "24.785768996924162",
+    "time": "20.06887999922037",
     "type": "before",
     "id": "38",
     "tid": "31",
@@ -1098,7 +1098,7 @@
 {
     "log_id": "111",
     "logtype": "hook",
-    "time": "25.085207998752594",
+    "time": "20.294436000287533",
     "type": "before",
     "id": "39",
     "tid": "11",
