@@ -236,7 +236,7 @@ function __promise(loc, range) {
 function __promise_wrap(func_call, p) {
     return p;
 }
-__func_begin('1,0', '0,646', '0,646', 0, 'main program', false);
+__func_begin('1,0', '0,597', '0,597', 0, 'main program', false);
 const fs = require('fs');
 (async function () {
     __func_begin('2,1', '49,296', '27,298', 1, 'func@2:1', true);
@@ -248,32 +248,28 @@ const fs = require('fs');
     response = __resume(await __await(readFile(filename), '8,13', '252,277', 1, 'func@2:1', true), '8,13', '252,277', 1, 'func@2:1', true);
     show(response);
     __func_end(undefined, '2,1', '49,296', 1, 'func@2:1', true);
-}().then(function () {
-    __func_begin('10,10', '323,347', '307,349', 2, 'func@10:10', false);
-    console.log('complete');
-    __func_end(undefined, '10,10', '323,347', 2, 'func@10:10', false);
-}));
+}());
 function readFile(filename) {
-    __func_begin('13,0', '385,518', '352,520', 3, 'readFile', false);
-    return __func_end(__promise_wrap(__promise('14,9', '392,517'), new Promise(function (resolve) {
-        __func_begin('14,22', '430,512', '405,516', 4, 'func@14:22', false);
+    __func_begin('11,0', '336,469', '303,471', 2, 'readFile', false);
+    return __func_end(__promise_wrap(__promise('12,9', '343,468'), new Promise(function (resolve) {
+        __func_begin('12,22', '381,463', '356,467', 3, 'func@12:22', false);
         fs.readFile(filename, 'utf-8', function (err, text) {
-            __func_begin('15,35', '490,504', '461,510', 5, 'func@15:35', false);
+            __func_begin('13,35', '441,455', '412,461', 4, 'func@13:35', false);
             resolve(text);
-            __func_end(undefined, '15,35', '490,504', 5, 'func@15:35', false);
+            __func_end(undefined, '13,35', '441,455', 4, 'func@13:35', false);
         });
-        __func_end(undefined, '14,22', '430,512', 4, 'func@14:22', false);
-    })), '13,0', '385,518', 3, 'readFile', false);
-    __func_end(undefined, '13,0', '385,518', 3, 'readFile', false);
+        __func_end(undefined, '12,22', '381,463', 3, 'func@12:22', false);
+    })), '11,0', '336,469', 2, 'readFile', false);
+    __func_end(undefined, '11,0', '336,469', 2, 'readFile', false);
 }
 function getFilename(name) {
-    __func_begin('20,0', '553,598', '521,600', 6, 'getFilename', false);
-    return __func_end('input_sample/' + name.split('\n')[0], '20,0', '553,598', 6, 'getFilename', false);
-    __func_end(undefined, '20,0', '553,598', 6, 'getFilename', false);
+    __func_begin('18,0', '504,549', '472,551', 5, 'getFilename', false);
+    return __func_end('input_sample/' + name.split('\n')[0], '18,0', '504,549', 5, 'getFilename', false);
+    __func_end(undefined, '18,0', '504,549', 5, 'getFilename', false);
 }
 function show(text) {
-    __func_begin('23,0', '626,644', '601,646', 7, 'show', false);
+    __func_begin('21,0', '577,595', '552,597', 6, 'show', false);
     console.log(text);
-    __func_end(undefined, '23,0', '626,644', 7, 'show', false);
+    __func_end(undefined, '21,0', '577,595', 6, 'show', false);
 }
-__func_end(undefined, '1,0', '0,646', 0, 'main program', false);
+__func_end(undefined, '1,0', '0,597', 0, 'main program', false);
