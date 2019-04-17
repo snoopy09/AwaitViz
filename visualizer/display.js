@@ -85,8 +85,8 @@ function display_plot(obj, code){
       label: times[i],
       args: [[times[i]], {
         mode: 'immediate',
-        transition: {duration: 300},
-        frame: {duration: 300, redraw: false},
+        transition: {duration: 1000},
+        frame: {duration: 1000, redraw: false},
       }]
     });
   }
@@ -168,16 +168,16 @@ function display_plot(obj, code){
         args: [null, {
           mode: 'immediate',
           fromcurrent: true,
-          transition: {duration: 300},
-          frame: {duration: 500, redraw: false}
+          transition: {duration: 1000},
+          frame: {duration: 1000, redraw: false}
         }],
         label: 'Play'
       }, {
         method: 'animate',
         args: [[null], {
           mode: 'immediate',
-          transition: {duration: 0},
-          frame: {duration: 0, redraw: false}
+          transition: {duration: 1000},
+          frame: {duration: 1000, redraw: false}
         }],
         label: 'Pause'
       }]
@@ -231,8 +231,9 @@ function display_plot(obj, code){
     //アニメーションだと文字のハイライトうまくいってないなぁ
 
     var time = e.step.value;
-    var change_node = nodes.filter(n => n.time==time || n.resolvetime==time)[0];
-    if(change_node != undefined) {
+    var change_node_array = nodes.filter(n => n.time==time || n.resolvetime==time);
+    if(change_node_array.length > 0) {
+      var change_node = change_node_array[0];
       //色を変える
       execute[0].place = change_node.range[1];
       execute[1].place = change_node.range[0];

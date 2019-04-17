@@ -1,6 +1,19 @@
 var nodes = [];
 var lines = [];
-var frames = [{name:"0", data:[]}];
+// var frames = [{name:"0", data:[]}];
+var frames = [{name:"0", data:[{
+  x: [0],
+  y: [0],
+  z: [0],
+  id: [-1],
+  text: '',
+  // // name: nodes.map(n => n.state),
+  name: '',
+  marker: {
+    size: 0,
+    color: ['red']
+  }
+}]}];
 var cycle=0;
 var max_cycle = 5;
 // const pending_color = ['#ff9900', '#ffad33', '#ffc266', '#ffd699'];
